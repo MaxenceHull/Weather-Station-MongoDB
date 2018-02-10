@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Admin Theme v3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="/stylesheets/styles_2.css" rel="stylesheet">
+
+    <link href="/stylesheets/stats.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <div class="logo">
+	                 <h1><a href="index.html"><%= title %></a></h1>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <li class="current"><a href="stats.html"><i class="glyphicon glyphicon-stats"></i>Dashboard</a></li>
+                    <li><a href="tables.html"><i class="glyphicon glyphicon-list"></i> Tables</a></li>
+                    <li class="submenu">
+                         <a href="#">
+                            <i class="glyphicon glyphicon-list"></i> Pages
+                            <span class="caret pull-right"></span>
+                         </a>
+                         <!-- Sub menu -->
+                         <ul>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signup.html">Signup</a></li>
+                        </ul>
+                    </li>
+                </ul>
+             </div>
+		  </div>
+		  <div class="col-md-10">
+        <div class="content-box-large">
+  				<div class="panel-heading">
+					<div class="panel-title">Actual Weather Conditions</div>
+				</div>
+  				<div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="center">
+                  <input type="text" class="dial-temperature">
+                  <div class="text-center">Actual temperature (ºC)</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="center">
+                  <input type="text" class="dial-brightness">
+                  <div align="text-center">Actual brightness</div>
+                </div>
+              </div>
+          </div>
+  				</div>
+  			</div>
+
+  			<div class="content-box-large">
+  				<div class="panel-heading">
+					<div class="panel-title">Detailled Charts</div>
+					<div class="panel-options">
+            <div class="alert alert-warning" id="alert-empty-field">
+              <strong>Please fill both "from" and "to" fields</strong>
+            </div>
+					</div>
+				</div>
+  				<div class="panel-body">
+            <div class="row">
+              <div class="col-md-3">From: <input type="text" id="datepicker-from"></div>
+              <div class="col-md-3">To: <input type="text" id="datepicker-to"></div>
+            </div>
+            <div id="charts">
+              <div class="ct-chart ct-double-octave" id="chart1"></div>
+              <div class="ct-chart ct-double-octave" id="chart2"></div>
+              <div class="row">
+                <div class="col-md-3 center">
+                  <input type="text" class="dial-temperature-chart-min">
+                  <div class="text-center">Minimal temperature (ºC)</div>
+                </div>
+                <div class="col-md-3 center">
+                  <input type="text" class="dial-temperature-chart-max">
+                  <div align="text-center">Maximal temperature (ºC)</div>
+                </div>
+                <div class="col-md-3 center">
+                  <input type="text" class="dial-brightness-chart-min">
+                  <div class="text-center">Minimal brightness</div>
+                </div>
+                <div class="col-md-3 center">
+                  <input type="text" class="dial-brightness-chart-max">
+                  <div align="text-center">Maximal brightness</div>
+                </div>
+            </div>
+          </div>
+  			</div>
+  		</div>
+		  </div>
+		</div>
+    </div>
+
+    <footer>
+         <div class="container">
+
+            <div class="copy text-center">
+               Copyright 2017</a>
+            </div>
+
+         </div>
+      </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.0/chartist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+    <script src="/javascripts/custom.js"></script>
+    <script src="/javascripts/dashboard.js"></script>
+  </body>
+</html>
