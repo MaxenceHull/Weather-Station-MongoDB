@@ -9,3 +9,7 @@ This Arduino-based Wetaher Station permits to retrieve temperature and brightnes
 * [MangoDB](https://www.mongodb.com) NoSQL database
 * [Express](https://expressjs.com) Application Framework
 * [PySerial](https://pythonhosted.org/pyserial/) Access the serial port (USB)
+## Arduino
+![alt_text](https://github.com/MaxenceHull/Weather-Station-MongoDB/blob/master/IMG_3895.jpg "Arduino")
+The weather station only contains two sensors at the moment but will soon be improved with many more!
+
